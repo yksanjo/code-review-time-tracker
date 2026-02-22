@@ -1,68 +1,82 @@
-# ReviewClock ⏱️
+# code-review-time-tracker
 
-> **Code Review Time Tracker** - Track how long pull requests sit in review. Get insights into your team's code review velocity and identify bottlenecks with this powerful Chrome extension.
+## Detailed Description
 
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-[![Chrome Web Store](https://img.shields.io/badge/Chrome-Extension-4285F4?logo=google-chrome)](https://chrome.google.com/webstore)
-[![Status: Active](https://img.shields.io/badge/status-active-success.svg)](https://github.com/yksanjo/ReviewClock)
-[![GitHub stars](https://img.shields.io/github/stars/yksanjo/ReviewClock?style=social)](https://github.com/yksanjo/ReviewClock)
+code-review-time-tracker is maintained as an industry-grade software project with production-ready engineering practices.  
+This repository includes documented setup, quality gates, operational guidance, and governance standards so contributors can safely build, test, and ship changes with confidence.
 
-**ReviewClock** automatically tracks code review times on GitHub, helping you understand your team's review velocity, identify bottlenecks, and improve your development workflow.
+## Problem Statement
 
-## Features
+Describe the user or business problem this project solves, the target users, and expected outcomes.
 
-- ⏱️ Automatic PR review time tracking
-- 📊 Dashboard showing review metrics
-- 👥 Per-reviewer statistics
-- 📈 Team velocity trends
-- 🔔 Notifications for stale PRs
-- 📤 Export data to CSV/JSON
+## Solution Overview
 
-## Installation
+Summarize the architecture, core modules, and runtime behavior at a high level.
 
-### From Source
+## Key Features
 
-1. Clone this repository
-2. Open Chrome and navigate to `chrome://extensions/`
-3. Enable "Developer mode"
-4. Click "Load unpacked" and select the `code-review-time-tracker` directory
+- Clear project scope and intended use.
+- Reproducible local development workflow.
+- Test coverage and CI quality gates.
+- Security and contribution policies.
+- Deployment-ready repository structure.
 
-### From Chrome Web Store
+## Repository Structure
 
-(Coming soon)
+```text
+.
+|-- src/                  # Core implementation
+|-- tests/                # Automated test suites
+|-- docs/                 # Design notes and operational docs
+|-- .github/workflows/    # CI pipelines
+|-- README.md
+|-- LICENSE
+|-- CONTRIBUTING.md
+|-- SECURITY.md
+|-- CODE_OF_CONDUCT.md
+```
 
-## Setup
+## Getting Started
 
-1. Install the extension
-2. Click the extension icon and configure:
-   - GitHub token (for private repos)
-   - Notification preferences
-   - Stale PR threshold (default: 48 hours)
+### Prerequisites
+
+- Git
+- Project runtime/toolchain for this repo
+
+### Local Setup
+
+```bash
+make test
+make lint
+```
 
 ## Usage
 
-The extension automatically tracks:
-- Time from PR creation to first review
-- Time from last comment to merge/close
-- Total review time
-- Number of review rounds
+Document primary commands, API routes, CLI examples, or UI workflows here.
 
-Click the extension icon to view:
-- Current PRs being tracked
-- Review time statistics
-- Team performance metrics
+## Quality Standards
 
-## Permissions
+- CI must pass before merge.
+- Changes require tests for critical behavior.
+- Security-sensitive changes should include risk notes.
+- Keep pull requests focused and reviewable.
 
-- `storage`: Store review time data locally
-- `alarms`: Schedule notifications for stale PRs
-- `tabs`: Track PR pages you visit
-- `https://github.com/*`: Access GitHub PR pages
+## Security
 
-## Data Privacy
+See `SECURITY.md` for responsible disclosure and handling guidelines.
 
-All data is stored locally in your browser. No data is sent to external servers.
+## Contributing
+
+See `CONTRIBUTING.md` for branching, commit, and pull request expectations.
+
+## Roadmap
+
+Track upcoming milestones, technical debt, and planned feature work.
+
+## Support
+
+Open a GitHub issue for bugs, feature requests, or documentation gaps.
 
 ## License
 
-MIT License
+This project is released under the MIT License.
